@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="iagocolodetti.jogodavelha.MainActivity">
+    tools:context="com.example.jogodavelha.MainActivity">
 
     <TextView
         android:id="@+id/tvX"
@@ -190,31 +190,48 @@
         app:layout_constraintStart_toEndOf="@+id/bt7"
         app:layout_constraintTop_toBottomOf="@+id/bt5" />
 
+    <!--    Ranking -->
+
     <TextView
         android:id="@+id/tvResultado"
         android:layout_width="0dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="72dp"
         android:gravity="center"
         android:text="Resultado: ..."
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btIniciar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btIniciar"
         android:layout_width="154dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="72dp"
         android:background="@drawable/btiniciar"
         android:text="INICIAR"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btRanking"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btiniciar"
+        android:text="RANKING"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
