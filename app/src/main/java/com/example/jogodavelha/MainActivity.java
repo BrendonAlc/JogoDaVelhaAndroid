@@ -1,11 +1,13 @@
 package com.example.jogodavelha;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.*;
+import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -61,6 +63,12 @@ public class MainActivity extends AppCompatActivity {
         };
 
         final Button btIniciar = findViewById(R.id.btIniciar);
+        final Button btRanking = findViewById(R.id.btRanking);
+
+        btRanking .setOnClickListener(v -> {
+            Intent intent = new Intent(this, RankingActivity.class);
+            startActivity(intent);
+        });
 
         tvs[4].setVisibility(View.INVISIBLE);
 
